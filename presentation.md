@@ -24,13 +24,9 @@
 
 -> # What will we cover? <-
 
-* What is (and isn't) (T/B)DD?
+* What is (and isn't) TDD?
 
 * How do I TDD?
-
-* BDD in JavaScript
-
-* Example
 
 * Conclusion
 
@@ -379,7 +375,7 @@ All these tools introduce *extra constraints* on your solution' implementation
 
 -> # The Bad Parts <-
 
-* Jerks and Dogma ruin everything
+* *Jerks and Dogma ruin everything*
 
 --------------------------------------------------------------------------------
 
@@ -390,7 +386,23 @@ All these tools introduce *extra constraints* on your solution' implementation
 -> # The Bad Parts <-
 
 * Jerks and Dogma ruin everything
-* Learning Curve
+* *Learning Curve*
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # The Bad Parts <-
+
+* Jerks and Dogma ruin everything
+* *Learning Curve*
+  - Tools
+  - Thinking BDD
+  - Refactoring
+  - Design
+  - Brittle vs. flexible specs
 
 --------------------------------------------------------------------------------
 
@@ -407,6 +419,7 @@ All these tools introduce *extra constraints* on your solution' implementation
   - Refactoring
   - Design
   - Brittle vs. flexible specs
+* *Test-first facists*
 
 --------------------------------------------------------------------------------
 
@@ -416,11 +429,326 @@ All these tools introduce *extra constraints* on your solution' implementation
 
 -> # The Good Parts <-
 
+* *Less remembering stuff*
+
 --------------------------------------------------------------------------------
 
 
 
 
 
--> # A tangent about software quality... <-
+-> # The Good Parts <-
 
+* Less remembering stuff
+* *Fast feedback about your code*
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # The Good Parts <-
+
+* Less remembering stuff
+* Fast feedback about your code
+* *Clear boundaries for refactoring*
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # The Good Parts <-
+
+* Less remembering stuff
+* Fast feedback about your code
+* Clear boundaries for refactoring
+* *(Some) assurance against regression*
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # The Good Parts <-
+
+* Less remembering stuff
+* Fast feedback about your code
+* Clear boundaries for refactoring
+* (Some) assurance against regression
+* *A design document your team can read*
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # The Good Parts <-
+
+* Less remembering stuff
+* Fast feedback about your code
+* Clear boundaries for refactoring
+* (Some) assurance against regression
+* A design document your team can read
+* *Complements existing tools*
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # A tangent about existing tools... <-
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # Existing Tools: SOLID  <-
+
+Introduced by Michael Feathers & Robert C. Martin
+
+* *Single Responsibility Principle*
+  - *A class should have only a single responsibility*
+* Open/Closed Principle
+  - Software entities should be open for extension, but closed for
+    modification.
+* Liskov Substitution Principle
+  - Objects in a program should be replaceable with instances of their
+    subtypes without altering the correctness of that program
+* Interface Segregation Principle
+  - Many client-specific interfaces are better than one general-purpose
+    interface
+* Dependency Inversion Principle
+  - Depend upon Abstractions. Do not depend upon concretions
+
+https://en.wikipedia.org/wiki/Solid_%28object-oriented_design%29
+http://cleancoders.com/category/solid-principles#videos
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # Existing Tools: SOLID  <-
+
+Introduced by Michael Feathers & Robert C. Martin
+
+* Single Responsibility Principle
+  - A class should have only a single responsibility
+* *Open/Closed Principle*
+  - *Software entities should be open for extension, but closed for*
+    *modification.*
+* Liskov Substitution Principle
+  - Objects in a program should be replaceable with instances of their
+    subtypes without altering the correctness of that program
+* Interface Segregation Principle
+  - Many client-specific interfaces are better than one general-purpose
+    interface
+* Dependency Inversion Principle
+  - Depend upon Abstractions. Do not depend upon concretions
+
+https://en.wikipedia.org/wiki/Solid_%28object-oriented_design%29
+http://cleancoders.com/category/solid-principles#videos
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # Existing Tools: SOLID  <-
+
+Introduced by Michael Feathers & Robert C. Martin
+
+* Single Responsibility Principle
+  - A class should have only a single responsibility
+* Open/Closed Principle
+  - Software entities should be open for extension, but closed for
+    modification.
+* *Liskov Substitution Principle*
+  - *Objects in a program should be replaceable with instances of their
+    *subtypes without altering the correctness of that program*
+* Interface Segregation Principle
+  - Many client-specific interfaces are better than one general-purpose
+    interface
+* Dependency Inversion Principle
+  - Depend upon Abstractions. Do not depend upon concretions
+
+https://en.wikipedia.org/wiki/Solid_%28object-oriented_design%29
+http://cleancoders.com/category/solid-principles#videos
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # Existing Tools: SOLID  <-
+
+Introduced by Michael Feathers & Robert C. Martin
+
+* Single Responsibility Principle
+  - A class should have only a single responsibility
+* Open/Closed Principle
+  - Software entities should be open for extension, but closed for
+    modification.
+* Liskov Substitution Principle
+  - Objects in a program should be replaceable with instances of their
+    subtypes without altering the correctness of that program
+* *Interface Segregation Principle*
+  - *Many client-specific interfaces are better than one general-purpose*
+    *interface*
+* Dependency Inversion Principle
+  - Depend upon Abstractions. Do not depend upon concretions
+
+https://en.wikipedia.org/wiki/Solid_%28object-oriented_design%29
+http://cleancoders.com/category/solid-principles#videos
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # Existing Tools: SOLID  <-
+
+Introduced by Michael Feathers & Robert C. Martin
+
+* Single Responsibility Principle
+  - A class should have only a single responsibility
+* Open/Closed Principle
+  - Software entities should be open for extension, but closed for
+    modification.
+* Liskov Substitution Principle
+  - Objects in a program should be replaceable with instances of their
+    subtypes without altering the correctness of that program
+* Interface Segregation Principle
+  - Many client-specific interfaces are better than one general-purpose
+    interface
+* *Dependency Inversion Principle*
+  - *Depend upon Abstractions. Do not depend upon concretions*
+
+https://en.wikipedia.org/wiki/Solid_%28object-oriented_design%29
+http://cleancoders.com/category/solid-principles#videos
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # Existing Tools: Refactoring  <-
+
+
+Martin C. Fowler
+
+noun: a *change* made to the internal *structure of software* to make it easier
+to understand and cheaper to modify *without changing its observable behavior*
+
+verb: to restructure software by applying a series of refactorings without
+changing its observable behavior
+
+## Code Smells
+
+* Comments
+* Long Method
+* Long Class
+* Conditional Complexity
+* Private Methods
+* Shotgun Surgery
+* Data Classes
+
+http://refactoring.com/
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # How do I BDD?  <-
+
+
+*1. Red*
+
+  Write a spec; make sure it fails
+
+## 2. Green
+
+  Write just enough code to make the spec pass
+
+3. Refactor
+
+  Optimize the code to make it easier to make the next change
+  Improve the clarity of the code
+  Change the code, not the specs
+  The specs should pass when you're done
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # How do I BDD?  <-
+
+Thinking BDD: Learn to ask yourself questions
+
+- What will this feature do?
+- Where do I start?
+- What might be a convenient interface for that?
+
+When things get sticky, ask:
+
+- Why is this so darn hard?
+- Is this object/method handling too many responsibilities?
+- How can I avoid making a decision?
+- Is there a more convenient way to think about this interface?
+- How could the code be clearer?
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # BDD in JavaScript  <-
+
+
+Tools:
+
+- Mocha: Test suite and runner
+
+  http://mochajs.org/
+
+- Chai:  Expectation library
+
+  http://chaijs.com/
+
+- Sinon: Stubs, Spies, and Mocks
+
+  http://sinonjs.org/
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+-> (David: it's time to pause and write code) <-
