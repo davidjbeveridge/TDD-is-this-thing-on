@@ -28,7 +28,13 @@
 
 * How do I TDD?
 
-* Conclusion
+* Do some TDD
+
+  - We probably won't finish
+
+  - Mistakes will be made
+
+  - Audience participation is encouraged
 
 --------------------------------------------------------------------------------
 
@@ -63,7 +69,7 @@
 * The Big Lie
 
 
--> You have to write your tests *first* <-
+-> You have to write your *tests first* <-
 
 --------------------------------------------------------------------------------
 
@@ -177,10 +183,9 @@ We specify behavior for things all the time:
 
 * Penal Code
 * School Rules
-* Code of Conduct
+* Blueprints
 * Terms of Service
-* User Stories
-* Acceptance Criteria
+* User Stories & Acceptance Criteria
 
 --------------------------------------------------------------------------------
 
@@ -205,10 +210,9 @@ We specify behavior for things all the time:
 
 * Penal Code
 * School Rules
-* Code of Conduct
+* Blueprints/plans
 * Terms of Service
-* User Stories
-* Acceptance Criteria
+* User Stories & Acceptance Criteria
 * *Automated software suites*
 
 --------------------------------------------------------------------------------
@@ -698,7 +702,12 @@ http://refactoring.com/
 
 
 
--> # How do I BDD?  <-
+-> # How do I BDD? Thinking:  <-
+
+Think Architecture:
+
+- Start with use cases
+- Prevent making decisions about the edges of the architecture
 
 Thinking BDD: Learn to ask yourself questions
 
@@ -743,6 +752,146 @@ Tools:
 
 
 
+-> # Example Project <-
+
+-> Mitigating MITM DDoS in the Browser <-
+
+March 16, 2015: 
+
+- Man-in-the-middle attack against Github
+- Targeted plain-HTTP script on Baidu Analytics
+- Attacker inserted code to request assets on github.com
+
+Solutions?
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # Example Project <-
+
+-> Mitigating MITM DDoS in the Browser <-
+
+March 16, 2015: 
+
+- Man-in-the-middle attack against Github
+- Targeted plain-HTTP script on Baidu Analytics
+- Attacker inserted code to request assets on github.com
+
+Solutions?
+
+- *SSL on provider CDN*
+- Don't use external scripts
+- Only use external scripts you can trust
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # Example Project <-
+
+-> Mitigating MITM DDoS in the Browser <-
+
+March 16, 2015: 
+
+- Man-in-the-middle attack against Github
+- Targeted plain-HTTP script on Baidu Analytics
+- Attacker inserted code to request assets on github.com
+
+Solutions?
+
+- SSL on provider CDN
+- *Don't use external scripts*
+- Only use external scripts you can trust
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # Example Project <-
+
+-> Mitigating MITM DDoS in the Browser <-
+
+March 16, 2015: 
+
+- Man-in-the-middle attack against Github
+- Targeted plain-HTTP script on Baidu Analytics
+- Attacker inserted code to request assets on github.com
+
+Solutions?
+
+- SSL on provider CDN
+- Don't use external scripts
+- *Only use external scripts you can trust*
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # Example Project <-
+
+-> Mitigating MITM DDoS in the Browser <-
+
+March 16, 2015: 
+
+- Man-in-the-middle attack against Github
+- Targeted plain-HTTP script on Baidu Analytics
+- Attacker inserted code to request assets on github.com
+
+Solutions?
+
+- *Only use external scripts you can trust*
+
+How can we know that a script hasn't been tampered with?
+
+Validate its hash before you run it.
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+-> # Example Project <-
+
+-> Mitigating MITM DDoS in the Browser <-
+
+March 16, 2015:
+
+- Man-in-the-middle attack against Github
+- Targeted plain-HTTP script on Baidu Analytics
+- Attacker inserted code to request assets on github.com
+
+Solutions?
+
+- *Only use external scripts you can trust*
+
+How can we know that a script hasn't been tampered with?
+
+Validate its hash before you run it.
+
+Caveats:
+
+- Proof of concept only
+- *STRONG* SSL on your site
+- Serve the verification script via strong SSL
+- Precomputed hashes for all external scripts
+- Attack still possible, just harder to do at scale
+
+--------------------------------------------------------------------------------
+
+
+
+
+
 
 
 
@@ -752,3 +901,21 @@ Tools:
 
 
 -> (David: it's time to pause and write code) <-
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+-> # Resources <-
+
+"Architecture: The Lost Years" by Robert C. Martin
+  http://confreaks.tv/videos/rubymidwest2011-keynote-architecture-the-lost-years
+
+"Refactoring" by Martin Fowler
+  http://refactoring.com
+
+"Clean Code" by Robert C. Martin
+
